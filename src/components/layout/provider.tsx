@@ -7,7 +7,7 @@ type child = {
 }
 export const Provider = ({ children }: child) => {
   return (
-    <div>
+    <div className="min-h-screen">
       <Header />
       <div>{children}</div>
       <Footer />
