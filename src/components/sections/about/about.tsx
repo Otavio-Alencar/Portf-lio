@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const About = () => {
   return (
-    <div className="w-full py-16">
+    <div id="about" className="w-full py-16">
       <div className="container mx-auto flex h-full flex-col gap-8 px-4 xl:px-0">
         <div>
           <Title label="Sobre Mim" />

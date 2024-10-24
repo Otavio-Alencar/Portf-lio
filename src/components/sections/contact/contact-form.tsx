@@ -96,7 +96,7 @@ export function ContactForm() {
             </>
           )}
         />
-        <Button type="submit" className="!important bg-[#88c0d0]">
+        <Button type="submit" className="">
           Enviar
         </Button>
       </form>

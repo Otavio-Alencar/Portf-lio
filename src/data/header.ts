@@ -1,6 +1,6 @@
 export const HeaderData = [
-  { section: 'inicio', link: '/' },
-  { section: 'Projetos', link: '/' },
-  { section: 'Sobre Mim', link: '/' },
-  { section: 'Contato', link: '/' },
+  { section: 'inicio', link: '#home' },
+  { section: 'Projetos', link: '#projects' },
+  { section: 'Sobre Mim', link: '#tech' },
+  { section: 'Contato', link: '#contact' },
 ]

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import '@devnomic/marquee/dist/index.css'
 export const Technologies = () => {
   return (
-    <div className="container mx-auto min-h-52 w-full px-4 xl:px-0">
+    <div id="tech" className="container mx-auto min-h-52 w-full px-4 xl:px-0">
       <div className="flex h-full flex-col gap-8 py-10">
         <Title label="Tecnologias" />
 
