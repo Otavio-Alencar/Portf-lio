@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import './globals.css'
 
 import { Provider } from '@/components/layout/provider'
+import { Toaster } from '@/components/ui/sonner'
 
 const Montserrat = localFont({
   src: './fonts/Montserrat_wght.ttf',
@@ -30,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${Montserrat.variable} ${MontserratItalic.variable} antialiased`}
       >
-        <Provider>{children}</Provider>
+        <Provider>
+          {children} <Toaster />
+        </Provider>
       </body>
     </html>
   )
