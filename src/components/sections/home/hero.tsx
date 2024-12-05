@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-// import { HomeAnimation } from './home-animation'
 
 export const Hero = () => {
   return (
@@ -23,12 +22,14 @@ export const Hero = () => {
               </Button>
             </a>
             <a href="#contact">
-              <Button size={'lg'}>Contato</Button>
+              <Button
+                size={'lg'}
+                className="border border-secondary bg-transparent transition-all hover:bg-secondary"
+              >
+                Contato
+              </Button>
             </a>
           </div>
-        </div>
-        <div className="hidden items-center justify-center lg:flex">
-          {/* <HomeAnimation /> */}
         </div>
       </div>
     </div>

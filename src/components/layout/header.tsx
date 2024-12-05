@@ -7,7 +7,7 @@ export const Header = () => {
     <div className="fixed z-50 h-28 w-full bg-background shadow-lg">
       <div className="container mx-auto flex h-full items-center justify-between px-4 xl:px-0">
         <div className="flex h-full items-center gap-1">
-          <Image src="/logo-branca.png" alt="logo" />
+          <Image src="/logo-branca.png" alt="logo" width={30} height={30} />
           <p className="font-semibold text-white">Oalencar Dev</p>
         </div>
         <menu className="hidden gap-5 text-white lg:flex">

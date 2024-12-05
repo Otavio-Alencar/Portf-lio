@@ -1,5 +1,5 @@
 'use client'
-import { Button } from '@/components/ui/button'
+
 import emailjs from '@emailjs/browser'
 import {
   Form,
@@ -96,9 +96,13 @@ export function ContactForm() {
             </>
           )}
         />
-        <Button type="submit" className="">
+        <button
+          type="submit"
+          style={{ backgroundColor: '#88c0d0' }}
+          className="rounded-md py-2 hover:opacity-95"
+        >
           Enviar
-        </Button>
+        </button>
       </form>
     </Form>
   )
