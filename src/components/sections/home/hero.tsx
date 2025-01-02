@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="container mx-auto flex h-full justify-between px-4 xl:px-0">
         <div className="flex h-full flex-col items-center justify-center gap-10 lg:max-w-[40%] lg:items-start">
           <article className="flex flex-col items-center gap-4 px-5 lg:items-start lg:px-0">
-            <h1 className="text-center text-5xl font-bold leading-3 lg:text-start lg:text-5xl">
+            <h1 className="text-center text-4xl font-bold lg:text-start lg:text-5xl">
               SEJA BEM VINDO AO MEU PORTFÓLIO
             </h1>
             <p className="text-center text-sm lg:text-start">

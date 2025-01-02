@@ -10,15 +10,15 @@ type Props = {
 const Page = ({ params }: Props) => {
   const project = ProjectsData.find((item) => item.id === parseInt(params.id))
   return (
-    <div className="min-h-screen w-full overflow-hidden pt-[112px]">
+    <div className="min-h-[calc(100vh-100px)] w-full overflow-hidden pt-[112px] md:min-h-screen">
       <div className="flex gap-5">
         {!project ? (
           <div className="w-full text-center font-bold">
             Projeto não encontrado
           </div>
         ) : (
-          <div className="container mx-auto flex flex-col items-center gap-2 pt-8">
-            <ShineBorder className="relative flex flex-col items-center justify-center overflow-hidden bg-transparent p-0 shadow-md md:w-3/5">
+          <div className="container mx-auto my-2 flex flex-col items-center gap-2 pt-8 lg:gap-6">
+            <ShineBorder className="relative hidden flex-col items-center justify-center overflow-hidden bg-transparent p-0 shadow-md md:flex md:w-3/5">
               <img
                 className="h-full p-0"
                 src={project.image}
@@ -26,14 +26,16 @@ const Page = ({ params }: Props) => {
               />
             </ShineBorder>
 
-            <div className="container mx-auto flex flex-col justify-between gap-6 px-5 md:px-0">
-              <div>
-                <h1 className="text-3xl font-bold">{project.title}</h1>
-                <p className="max-w-[90%] text-wrap break-all lg:max-w-full">
+            <div className="container mx-auto flex flex-col justify-between gap-6 px-5 md:px-0 md:pb-5">
+              <div className="flex flex-col gap-2">
+                <h1 className="text-center text-3xl font-bold md:text-start">
+                  {project.title}
+                </h1>
+                <p className="text-wrap break-all text-center md:max-w-[90%] md:text-start lg:max-w-full">
                   {project.largeDescription}
                 </p>
               </div>
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row justify-center gap-2 md:justify-start">
                 <Link
                   className="flex w-48 items-center justify-center rounded-md border border-secondary bg-transparent py-2 text-sm hover:bg-secondary"
                   href={'/'}
